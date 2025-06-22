@@ -6,13 +6,13 @@ exports.register = async (req, res) => {
   const { username, password, roles } = req.body;
   if (!username || !password) return res.status(400).json({ message: "Username and password required" });
 
-  const duplicate = await User.findOne({ username });
-  if (duplicate) return res.status(409).json({ message: "Username taken" });
+  const existingUser = await User.findOne({ username });
+  if (existingUser) return res.status(409).json({ message: "Username already exists" });
 
-  const hashedPwd = await bcrypt.hash(password, 10);
-  const user = new User({ username, password: hashedPwd, roles: roles || ["User"] });
+  const hashedPassword = await bcrypt.hash(password, 10);
+  const user = new User({ username, password: hashedPassword, roles: roles || ["User"] });
   await user.save();
-  res.status(201).json({ message: "User registered" });
+  res.status(201).json({ message: "User registered successfully" });
 };
 
 exports.login = async (req, res) => {

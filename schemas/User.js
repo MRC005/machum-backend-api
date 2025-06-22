@@ -6,7 +6,8 @@ const userSchema = new mongoose.Schema({
   roles: {
     type: [String],
     default: ["User"]
-  }
+  },
+  refreshToken: String // Added for JWT refresh token functionality
 });
 
 module.exports = mongoose.models.User || mongoose.model('User', userSchema);
