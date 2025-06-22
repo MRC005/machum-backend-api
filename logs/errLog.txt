@@ -1,0 +1,9 @@
+17:06:2025	18:20:57	002349d8-859d-49ea-9d6a-817e414d8613	Error: ENOENT: no such file or directory, stat 'E:\demovit\view\404.html'
+17:06:2025	18:20:58	5d0ba3f2-0a1a-4b6b-a1ee-bea99043d387	Error: ENOENT: no such file or directory, stat 'E:\demovit\view\404.html'
+17:06:2025	19:09:38	8e9b3cb9-a175-4949-bd13-6cd3d72cc05f	Error: ENOENT: no such file or directory, stat 'E:\demovit\routes\views\index.html'
+20:06:2025	18:57:51	569a5a92-b31a-4025-9362-338f459bf46f	ReferenceError: whiteList is not defined
+20:06:2025	18:57:57	f8546276-f6f9-42a5-a152-9fd6bade849a	ReferenceError: whiteList is not defined
+20:06:2025	19:35:23	9ce7c489-2ce7-4a3d-a320-27b6b26ced19	Error: Cannot set headers after they are sent to the client
+20:06:2025	19:35:48	ca10877a-9391-44af-97f4-ac54cf7e5b82	Error: Cannot set headers after they are sent to the client
+20:06:2025	19:35:57	590066f0-195b-49cd-b29b-173f92af49d9	Error: Cannot set headers after they are sent to the client
+20:06:2025	19:38:06	f7da39c8-79df-4860-a75d-b096470a8321	Error: Cannot set headers after they are sent to the client
